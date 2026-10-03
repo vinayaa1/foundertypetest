@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>how do you actually work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+
+<main>
+
+  <section id="start" class="screen on">
+    <img data-asset id="logo" class="logo" alt="">
+    <img data-asset id="hero" class="hero-img" alt="">
+    <h1 id="title"></h1>
+    <p class="sub" id="intro"></p>
+    <div class="axes-preview" id="axes-preview"></div>
+    <button class="btn" id="go">start</button>
+    <button class="btn ghost" id="last" hidden>see your last result</button>
+  </section>
+
+  <section id="quiz" class="screen">
+    <div class="top">
+      <button class="back" id="back" aria-label="previous question">back</button>
+      <div class="bar"><i id="fill"></i></div>
+      <span class="count" id="count"></span>
+    </div>
+    <h2 class="q" id="qtext"></h2>
+    <div class="opts" id="opts"></div>
+  </section>
+
+  <section id="result" class="screen">
+    <img data-asset id="typeimg" class="type-img" alt="">
+    <p class="code" id="code"></p>
+    <h1 class="name" id="name"></h1>
+    <p class="tag" id="tag"></p>
+
+    <div id="sections"></div>
+    <div class="card" id="meters-card"><h2>your split</h2><div id="meters"></div></div>
+
+    <div class="actions">
+      <button class="btn" id="copy">copy link to result</button>
+      <button class="btn ghost" id="retake">retake</button>
+    </div>
+    <p class="toast" id="toast"></p>
+
+    <div class="all-types">
+      <h2>all sixteen</h2>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
